@@ -1,0 +1,4 @@
+/home/jayanta/projects/redis_cpp/build/CMakeFiles/redis_server.dir
+/home/jayanta/projects/redis_cpp/build/CMakeFiles/redis_client.dir
+/home/jayanta/projects/redis_cpp/build/CMakeFiles/edit_cache.dir
+/home/jayanta/projects/redis_cpp/build/CMakeFiles/rebuild_cache.dir
