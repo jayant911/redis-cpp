@@ -57,3 +57,24 @@ This project now demonstrates:
     OOP Principles → Following separation of concerns and single responsibility.
     CLI Development → Creating an interactive terminal-based tool.
 */
+
+#include <string>
+
+int main(int argc, char *argv[]) {
+    std::string host = "127.0.0.1";
+    int port = 6379;
+    int i = 1;
+
+    // Parse command-line args for -h and -p
+    while (i < argc) {
+        std::string arg = argv[i];
+        if (arg == "-h" && i + 1 < argc) { // -h 127.0.0.1
+            host = argv[++i];
+        } else if (arg == "-p" && i + 1 < argc) {
+            port = std::stoi(argv[++i]);
+        } else {
+            break;
+        }
+        ++i;
+    }
+}
