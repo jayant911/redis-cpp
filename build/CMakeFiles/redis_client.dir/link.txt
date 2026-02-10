@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/redis_client.dir/src/client/main.cpp.o -o redis_client 
