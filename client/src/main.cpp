@@ -58,6 +58,7 @@ This project now demonstrates:
     CLI Development → Creating an interactive terminal-based tool.
 */
 
+#include "../include/CLI.h"
 #include <string>
 
 int main(int argc, char *argv[]) {
@@ -77,4 +78,10 @@ int main(int argc, char *argv[]) {
         }
         ++i;
     }
+
+    // Handle REPL and one-shot command modes
+    CLI cli(host, port);
+    cli.run();
+
+    return 0;
 }

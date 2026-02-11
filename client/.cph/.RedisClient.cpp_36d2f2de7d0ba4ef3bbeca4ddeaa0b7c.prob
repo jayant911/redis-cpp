@@ -1,0 +1,1 @@
+{"name":"Local: RedisClient","url":"/home/jayanta/projects/redis_cpp/client/RedisClient.cpp","tests":[{"id":1770749877581,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jayanta/projects/redis_cpp/client/RedisClient.cpp","group":"local","local":true}
