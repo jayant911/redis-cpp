@@ -1,3 +1,34 @@
-./build
-*/build
-build
+# Build artifacts
+build/
+bin/
+
+# Compiled objects
+*.o
+*.obj
+*.out
+
+# Executables
+*.exe
+my_redis_cli
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cph/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.cmake
+
+# Clangd
+.cache/
+compile_commands.json
