@@ -5,6 +5,7 @@
 //...
 #include "CommandHandler.h"
 #include "RedisClient.h"
+#include "ResponseParser.h"
 
 class CLI {
   public:

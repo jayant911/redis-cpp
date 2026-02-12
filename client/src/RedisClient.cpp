@@ -13,6 +13,7 @@
 #include <netdb.h>
 #include <string>
 #include <sys/socket.h>
+#include <sys/types.h>
 
 RedisClient::RedisClient(const std::string &host, int port)
     : host(host), port(port), sockfd(-1) {}
@@ -62,6 +63,13 @@ void RedisClient::disconnect() {
         close(sockfd); // Close socket if connection failed
         sockfd = -1;   // Reset socket file descriptor
     }
+}
+
+bool RedisClient::sendCommand(const std::string &command) {
+    if (sockfd == -1)
+        return false;
+    ssize_t sent = send(sockfd, command.c_str(), command.size(), 0);
+    return (sent == (ssize_t)command.size());
 }
 
 int RedisClient::getSocketFD() const { return sockfd; }
